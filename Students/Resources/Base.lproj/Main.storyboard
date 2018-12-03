@@ -25,11 +25,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2YK-4m-wHI">
-                                                <rect key="frame" x="127" y="0.0" width="121" height="51"/>
+                                                <rect key="frame" x="107" y="0.0" width="161" height="51"/>
                                                 <segments>
-                                                    <segment title="First"/>
-                                                    <segment title="Second"/>
+                                                    <segment title="First Name"/>
+                                                    <segment title="Last Name"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="sort:" destination="cgy-NB-C3s" eventType="valueChanged" id="n1D-CA-GTC"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,6 +60,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nCt-f3-Zxn"/>
                     </view>
+                    <connections>
+                        <outlet property="sortSelector" destination="2YK-4m-wHI" id="z5C-sg-cKU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zks-C7-bIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
