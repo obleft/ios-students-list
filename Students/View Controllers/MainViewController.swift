@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
                 NSLog("Error getting students: \(error)")
                 return
             }
-            
+            print ("test")
             self.students = students ?? []
         }
     }
